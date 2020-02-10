@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context=".fragments.ColorSelectorFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/select_color_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="16"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorWhite"
+            android:padding="3dp"
+            android:text="@string/select_color"/>
+
+        <Button
+        android:id="@+id/blue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_color_text"
+        android:layout_alignStart="@+id/select_color_text"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorBlue"
+        android:ems="8"
+        android:gravity="center"
+        android:padding="40dp"/>
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:background="@color/colorRed"
+            android:layout_below="@+id/select_color_text"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/blue_button"
+            android:gravity="center"
+            android:padding="40dp"/>
+
+        <Button
+            android:id="@+id/yellow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blue_button"
+            android:layout_alignStart="@+id/select_color_text"
+            android:background="@color/colorYellow"
+            android:ems="8"
+            android:gravity="center"
+            android:padding="40dp"/>
+
+        <Button
+            android:id="@+id/green_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:background="@color/colorGreen"
+            android:layout_below="@+id/red_button"
+            android:layout_toEndOf="@+id/yellow_button"
+            android:gravity="center"
+            android:padding="40dp"/>
+
+        <Button
+            android:id="@+id/orange_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yellow_button"
+            android:layout_alignStart="@+id/select_color_text"
+            android:background="@color/colorOrange"
+            android:ems="8"
+            android:gravity="center"
+            android:padding="40dp"/>
+
+        <Button
+            android:id="@+id/cyan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:background="@color/colorCyan"
+            android:layout_below="@+id/green_button"
+            android:layout_toEndOf="@+id/orange_button"
+            android:gravity="center"
+            android:padding="40dp"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

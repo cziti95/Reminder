@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".fragments.EditorFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/color_selector"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/click_select_color"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/alarm_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/alarm_name"
+            android:layout_below="@+id/color_selector"
+            android:layout_marginTop="40dp"
+            android:layout_alignStart="@+id/alarm_name"/>
+
+        <EditText
+            android:id="@+id/alarm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="13"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alarm_name_text"
+            android:padding="3dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorWhite">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/alarm_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/alarm_time"
+            android:layout_below="@+id/alarm_name"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_below="@+id/alarm_time_text"
+            android:layout_alignStart="@+id/alarm_time_text"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/alarm_time_hour_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/hour"
+                android:layout_weight="18"
+                />
+
+            <Spinner
+                android:id="@+id/hour_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"/>
+
+            <TextView
+                android:id="@+id/alarm_time_min_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/min"
+                android:layout_weight="18"/>
+
+            <Spinner
+                android:id="@+id/minute_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15" />
+
+            <TextView
+                android:id="@+id/alarm_time_second_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/sec"
+                android:layout_weight="18"/>
+
+            <Spinner
+                android:id="@+id/second_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/alarm_save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/round_corner_button"
+            android:text="@string/save"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</FrameLayout>
